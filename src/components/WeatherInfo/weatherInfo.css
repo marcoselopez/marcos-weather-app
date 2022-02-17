@@ -6,15 +6,19 @@
   justify-content: center;
   align-items: center;
   color: white;
+  text-shadow: 1px 1px 1px black;
 }
 .city {
   font-size: 2.5rem;
 }
+.time, .date {
+  font-size: 1.5rem;
+}
 .temperature {
-  font-size: 15rem;
+  font-size: 13rem;
   background: rgba(255, 255, 255, 0.13);
   border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px black;;
   backdrop-filter: blur(4.1px);
   -webkit-backdrop-filter: blur(4.1px);
   padding: 0 30px;
@@ -26,8 +30,26 @@
 .weather {
   font-size: 1.7rem;
 }
-.error {
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
+.weather-info > img {
+  filter: drop-shadow(1px 1px 0px black);
+}
+@media (min-width: 800px) {
+  .temperature {
+    font-size: 5rem;
+    padding: 10px 50px;
+  }
+  .city {
+    order: 1;
+    font-size: 5rem;
+  }
+  .temperature, .weather, .time, .date {
+    order: 2;
+  }
+  .weather-info > img {
+    order: 2;
+    width: 100px;
+  }
+  .weather {
+    font-size: 3rem;
+  }
 }

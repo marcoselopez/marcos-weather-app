@@ -11,25 +11,25 @@ const ExtraInfo = ({ weather }) => {
       <div className="extra-info-wind">
         <div className="wind">
            <p>Wind Degrees</p>
-           <p>{result.wind.deg}º</p>
+           <p className="value">{result.wind.deg}º</p>
         </div>
         <div className="wind">
           <p>Wind Speed</p>
-          <p>{result.wind.speed} Km/H</p>
+          <p className="value">{result.wind.speed} Km/H</p>
         </div>
       </div>      
       <div className="extra-info-common">
         <div className="common">
           <p>Humidity</p>
-          <p>{result.main.humidity} %</p>
+          <p className="value">{result.main.humidity} %</p>
         </div>
         <div className="common">
           <p>Pressure</p>
-          <p>{result.main.pressure} hPa</p>
+          <p className="value">{result.main.pressure} hPa</p>
         </div>
         <div className="common">
           <p>Visibility</p>
-          <p>{result.visibility} Mts</p>
+          <p className="value">{result.visibility} Mts</p>
         </div>
       </div>
     </div>
