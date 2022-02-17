@@ -1,0 +1,33 @@
+.weather-info {
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.city {
+  font-size: 2.5rem;
+}
+.temperature {
+  font-size: 15rem;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  padding: 0 30px;
+  margin-bottom: 5px;
+}
+.temperature span {
+  font-size: 4rem;
+}
+.weather {
+  font-size: 1.7rem;
+}
+.error {
+  color: crimson;
+  text-align: center;
+  font-size: 1.5rem;
+}
