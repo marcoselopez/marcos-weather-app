@@ -1,4 +1,3 @@
-import moment from 'moment';
 import { useEffect } from 'react';
 import getDate from '../../helpers/getDate';
 import getTime from '../../helpers/getTime';

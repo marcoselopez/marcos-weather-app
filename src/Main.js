@@ -5,8 +5,7 @@ import WeatherInfo from './components/WeatherInfo/WeatherInfo';
 const Main = () => {
   const apiKey = '&appid=aa924dd23a8fa95c9ed1eabb4afccb5a';
 
-  const [city, setCity] = useState('');  
-  const [country, setCountry] = useState('')
+  const [city, setCity] = useState('');
   const [weather, setWeather] = useState({loaded: false, result:{}});
 
   const handleSubmit = async(e) => {
