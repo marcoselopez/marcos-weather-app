@@ -48,7 +48,7 @@
 }
 /* MEDIA QUERY FOR VERY SMALL DISPLAY DEVICES*/
 @media (max-width: 400px) {
-  @media (max-height: 600px){
+  @media (max-height: 700px){
     .extra-info {
       height: 100px;
     }

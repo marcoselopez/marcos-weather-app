@@ -44,7 +44,7 @@
   .weather {
     font-size: 2rem;
   }
-  @media (max-height: 600px){
+  @media (max-height: 700px){
     .weather-info > img {
       height: 100px;
     }
