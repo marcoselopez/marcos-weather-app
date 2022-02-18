@@ -46,6 +46,7 @@
 .value {
   font-size: 1.3rem;
 }
+/* MEDIA QUERY FOR DESKTOP */
 @media (min-width: 800px) {
   .extra-info-wind, .extra-info-common {
     width: 50%;

@@ -15,7 +15,7 @@
   font-size: 1.5rem;
 }
 .temperature {
-  font-size: 13rem;
+  font-size: 10rem;
   background: rgba(255, 255, 255, 0.13);
   border-radius: 10px;
   box-shadow: 1px 1px 2px black;;
@@ -33,6 +33,19 @@
 .weather-info > img {
   filter: drop-shadow(1px 1px 0px black);
 }
+/* MEDIA QUERY FOR VERY SMALL DISPLAY DEVICES */
+@media (max-width: 400px) {
+  .temperature {
+    font-size: 6rem;
+  }
+  .city {
+    font-size: 2rem;
+  }
+  .weather {
+    font-size: 2rem;
+  }
+}
+/* MEDIA QUERY FOR DESKTOP */
 @media (min-width: 800px) {
   .temperature {
     font-size: 5rem;
@@ -51,16 +64,5 @@
   }
   .weather {
     font-size: 3rem;
-  }
-}
-@media (max-width: 400px) {
-  .temperature {
-    font-size: 6rem;
-  }
-  .city {
-    font-size: 2rem;
-  }
-  .weather {
-    font-size: 2rem;
   }
 }

@@ -95,6 +95,13 @@ code {
   width: 99%;
   margin-bottom: 10px;
 }
+/* MEDIA QUERY FOR VERY SMALL DISPLAY DEVICES */
+@media (max-width: 400px){
+  .welcome {
+    font-size: 1.6rem;
+  }
+}
+/* MEDIA QUERY FOR DESKTOP */
 @media (min-width: 800px) {
   .night-background {
     background: url('./assets/images/desktopNight2.jpg');
