@@ -44,6 +44,11 @@
   .weather {
     font-size: 2rem;
   }
+  @media (max-height: 600px){
+    .weather-info > img {
+      height: 100px;
+    }
+  }
 }
 /* MEDIA QUERY FOR DESKTOP */
 @media (min-width: 800px) {

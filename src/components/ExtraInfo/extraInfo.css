@@ -46,6 +46,20 @@
 .value {
   font-size: 1.3rem;
 }
+/* MEDIA QUERY FOR VERY SMALL DISPLAY DEVICES*/
+@media (max-width: 400px) {
+  @media (max-height: 600px){
+    .extra-info {
+      height: 100px;
+    }
+    .wind, .common {
+      font-size: 1rem;
+    }
+    .value {
+      font-size: 1rem;
+    }
+  }
+}
 /* MEDIA QUERY FOR DESKTOP */
 @media (min-width: 800px) {
   .extra-info-wind, .extra-info-common {
