@@ -12,17 +12,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  height: 100vh;
   position: relative;
 }
-
+html, body, #root {
+  height: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .main-container{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url('./assets/images/mainBackground.jpg');
   background-position: center;
   background-repeat: no-repeat;
