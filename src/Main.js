@@ -14,7 +14,7 @@ const Main = () => {
     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric${apiKey}`)
       .then(response => {
         const status = response.status;
-        if (status === 404) {
+        if (status === 404 || status === 400) {
           response.json().then(data => setWeather({loaded: false, result: data.message}))
         } else {
           response.json().then(data => setWeather({loaded: true, result: data}))
@@ -37,6 +37,7 @@ const Main = () => {
           <input type="text" name="city" id="city" value={city} onChange={(e) => setCity(e.target.value)} />
         </form>
         {!loaded && result === 'city not found' ? <h2 className="error">City not found, please try another</h2> : null}
+        {!loaded && result === 'Nothing to geocode' ? <h2 className="error">Please type a city first</h2> : null}
       </div>
       <WeatherInfo weather={ weather } />
       <ExtraInfo weather={ weather } />

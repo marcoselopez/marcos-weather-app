@@ -28,6 +28,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .main {
   width: 100%;
@@ -138,5 +139,13 @@ code {
   }
   .title{
     font-size: 6rem;
+  }
+}
+/* MEDIA QUERY TO TRY TO SOLVE KEYBOARD CHANGING VIEWPORT ON MOBILE DEVICES */
+@media (max-width: 800px) {
+  @media (max-height: 447px){
+    .main-container {
+      height: 173%;
+    }
   }
 }
